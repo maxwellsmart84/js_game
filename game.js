@@ -16,6 +16,7 @@
 // }
 //FINALLY FIGURED OUT THIS VARIABLE TOWARDS END!
 var gameOverJS = document.getElementById('gameOver');
+var choice = document.getElementById('choice');
 //
 function bark(options){
   if (options === 1) {
@@ -44,18 +45,18 @@ function sniff(options) {
   }
   if (options === 2) {
     document.getElementById('choice').innerHTML ="You see a family of badgers of having a tea party do you join in? YES or NO?";
-    if (options == 2) {
+  }
+  if (options == 2) {
       document.getElementById('choice').innerHTML ="You join them for a cup of tea, have a merry time, and then and then tear them to shreds.";
       document.getElementById('yesNoSniff').style.display="none";
       document.getElementById('gameOver').style.display="block";
-      document.getElementById('badgerHunter').style.display="block"
-    }
-    else if (options === 3) {
+      document.getElementById('badgerHunter').style.display="block";
+  }
+  if (options === 3) {
       document.getElementById('choice').innerHTML = "Ok - you decide to sniff some more and find some poop.  You eat it.";
       document.getElementById('yesNoSniff').style.display="none";
       document.getElementById('gameOver').style.display="block";
-      document.getElementById('shitEater').style.display="block"
-    }
+      document.getElementById('shitEater').style.display="block";
   }
 }
 function play(options) {
@@ -100,7 +101,7 @@ function nap(options) {
 
   }
   if (options === 5) {
-      document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! You wake up to belly scritches!";
+      var choice = document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! You wake up to belly scritches!";
       document.getElementById('dreamChoice').style.display="none";
       document.getElementById('gameOver').style.display="block";
     }
