@@ -1,11 +1,26 @@
 body{
+  background-image: url(img/bearmerica.jpg);
+  height:150px;
 
 }
+
 
 header {
   width:100%;
   margin:auto;
   text-align: center;
+  background-color: #ff69b4;
+  h1 {
+    color: lime;
+    text-shadow: 5px 5px 5px yellow;
+    border-top: 5px solid red;
+    border-left: 5px solid lime;
+    border-bottom: 5px solid white;
+    border-right: 5px solid;
+    font-size:3.5em;
+    font-weight: bolder;
+    font-family: sans-serif;
+  }
 }
 
 
@@ -18,7 +33,30 @@ div ul {
   width:100%;
   display: inline-block;
   list-style: none;
+  text-align: center;
 }
 div li {
   display: inline-block;
+}
+.images {
+  height:30%;
+  text-align: center;
+  h1 {
+    color:yellow;
+    font-size:3.5em;
+    font-family:sans-serif;
+  }
+  img {
+  height:300px;
+  width:300px;
+  }
+}
+#gameOver {
+  text-align: center;
+}
+
+#badgerSlayer {
+  width:100%;
+  height:auto;
+
 }

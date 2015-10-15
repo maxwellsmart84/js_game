@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
@@ -13,7 +14,7 @@
         </script>
       <div>
       <header>
-        <h1 id="choice">"Bear is frolicking through the woods, what should I do ?  SNIFF, PLAY, BARK or NAP?"</h1>
+        <h1 id="choice">"You are Bear frolicking through the woods, what should you do ?  SNIFF, PLAY, BARK or NAP?"</h1>
       </header>
       <div id="actionChoice" style="display:inline-block;">
         <ul>
@@ -49,23 +50,23 @@
       </div>
     <div id="dreamChoice" style="display:none;">
       <ul>
-        <li><button onclick="nap(2);"><h1>FRISBEE</h1></button></li>
-        <li><button onclick="nap(3);"><h1>BONE</h1><button></li>
+        <li><button onclick="nap(4);"><h1>FRISBEE</h1></button></li>
+        <li><button onclick="nap(5);"><h1>BONE</h1><button></li>
       </ul>
     </div>
     <div id="gameOver" style="display:none;">
       <button onclick="window.location.reload()"><h1>PLAY AGAIN?</h1><button>
     </div>
-    <div class="images" style="display:none;">
-      <img id ="enlightment" src="" alt="" style="display:none;"/>Congratulations You've Reached Enlightment!
-      <img id ="shitEater" src="" alt="" style="display:none;" />You ate Poop! Good Job!
-      <img id ="playDay"src="" alt="" style="display:none;"/>You came, you played you conquered!
-      <img id="bugEater" src="" alt="" style="display:none;" />Insectiside or...REGICIDE?...
-      <iframe title"Bear Going Crazy" id="badgerHunter" type"text/html" src="https://www.facebook.com/maxwell.krause/videos/10204703978256687/?l=6118423202458203599" frameborder="0" allowFullScreen style="display:none;"/>BADGER SLAYER!</iframe>
-      <img id="sweetDreams" src="https://goo.gl/photos/VmS5jqthyYGixRyj6" alt="" style="display:none;" />Naps are the best with belly rubs!
-      <img id="dazzled" src="" alt="" style="display:none;"/>You got dazed bro.
-      <img id="lassie" src="" alt="" style="display:none;"/>"What's wrong girl?!"
-      <img id="wishes" src="https://goo.gl/photos/CBF84Fz5ZTvqDJcK7" alt="" style="display:none;"/>Your wish came true!
+    <div class="images">
+      <div id ="enlightment" style="display:none;"><img src="zen.png" alt="" /><h1>Congratulations You've Reached Enlightment!</h1></div>
+      <div id="shitEater" style="display:none;"><img src="poop.png" alt=""  /><h1>You ate Poop! Good Job!</h1></div>
+      <div id ="playDay" style="display:none;"><img src="bearsmile.png" alt="" /><h1>You came, you played you conquered!</h1></div>
+      <div id="bugEater" style="display:none;"><img src="queenbee.png" alt=""/><h1>Insectiside or...REGICIDE?...</h1></div>
+      <div id="badgerHunter" style="display:none;"> <iframe width="560" height="315" src="https://www.youtube.com/embed/M_L0MzoXeDU" frameborder="0" allowfullscreen></iframe><h1>BADGER SKAYER!</h1></div>
+      <div id="sweetDreams" style="display:none;"> <img src="https://goo.gl/photos/VmS5jqthyYGixRyj6" alt="" /><h1> Naps are the best with belly rubs!</h1></div>
+      <div id="dazzled" style="display:none;"> <img src="dazer.png" alt="" /><h1>You got dazed bro.</h1></div>
+      <div id="lassie" style="display:none;"> <img src="lassie.png" alt=""/><h1>"What's wrong girl?!"</h1></div>
+      <div id="wishes" style="display:none;"> <img src="https://goo.gl/photos/CBF84Fz5ZTvqDJcK7" alt="" /><h1>Your wish came true!</h1></div>
     </div>
   </body>
 </html>
