@@ -14,17 +14,24 @@
 //   var text ="";
 //   (push) = document.getElementById('choice').innerHTML = + text;
 // }
+//FINALLY FIGURED OUT THIS VARIABLE TOWARDS END!
+var gameOverJS = document.getElementById('gameOver');
+//
 function bark(options){
   if (options === 1) {
       document.getElementById('choice').innerHTML = "You hear something and start  barking - mommy tells you to stop, do you? YES or NO?";
       document.getElementById('yesNoBark').style.display="block";
       document.getElementById('actionChoice').style.display="none";
     }
-  if (options === 2) {
-      document.getElementById('choice').innerHTML = "A piercing sound surrounds you.  Max is holding a small gray box and its pointed at me.  WHAT IS HAPPENING.. TO ... ME..?!!  You stop barking";
-  }
   if (options === 3) {
-    document.getElementById('choice').innerHTML = "You grumble a bit, mommy doesn't understand that you can hear a school on fire and the screaming children and just want to tell her.  You remember though that humans are deaf and get some scritches and kisses";
+      document.getElementById('choice').innerHTML = "A piercing sound surrounds you.  Max is holding a small gray box and its pointed at me.  WHAT IS HAPPENING.. TO ... ME..?!!  You stop barking";
+      document.getElementById('yesNoPlay').style.display="none";
+      document.getElementById('gameOver').style.display="block";
+  }
+  if (options === 2) {
+    document.getElementById('choice').innerHTML = "You grumble a bit, mommy doesn't understand that you can hear a school on fire and the screaming children and just want to tell her.  You remember that humans are deaf.";
+    document.getElementById('gameOver').style.display="block";
+    document.getElementById('yesNoBark').style.display="none";
   }
 }
 function sniff(options) {
@@ -35,12 +42,16 @@ function sniff(options) {
   }
   if (options === 2) {
     document.getElementById('choice').innerHTML ="You see a family of badgers of having a tea party do you join in? YES or NO?";
-  }
-  if (options === 3) {
-    document.getElementById('choice').innerHTML = "Ok - you decide to sniff some more and find some poop.  You eat it.";
+    if (options == 2) {
+      document.getElementById('choice').innerHTML ="You join them for a cup of tea, have a merry time, and then and then tear them to shreds.";
+      document.getElementById('yesNoSniff').style.display="none";
+      document.getElementById('gameOver').style.display="block";
     }
-  if (options === 4) {
-    document.getElementById('choice').innerHTML ="You join them for a cup of tea, have a merry time, and then and then tear them to shreds.";
+    else if (options === 3) {
+      document.getElementById('choice').innerHTML = "Ok - you decide to sniff some more and find some poop.  You eat it.";
+      document.getElementById('yesNoSniff').style.display="none";
+      document.getElementById('gameOver').style.display="block";
+    }
   }
 }
 function play(options) {
@@ -49,35 +60,57 @@ function play(options) {
     document.getElementById('yesNoPlay').style.display="block";
     document.getElementById('actionChoice').style.display="none";
   }
-  if options === 2) {
-    document.getElementById('choice').innerHTML =
+  if (options === 2) {
+    document.getElementById('choice').innerHTML ="You go round and round chasing your tail.  The butterfly finds this amusing and turns into a princess granting you a wish.  You wish for a bone.  Today was a good day";
+    document.getElementById('yesNoPlay').style.display="none";
+    document.getElementById('gameOver').style.display="block";
   }
-  if options === 3) {
-    document.getElementById('choice').innerHTML =
-  }
-  if options === 4) {
-    document.getElementById('choice').innerHTML =
+  if (options === 3) {
+    document.getElementById('choice').innerHTML ="You catch the butterfly and and you are now laying on it - do you eat it?";
+    if (options === 2) {
+      document.getElementById('choice').innerHTML ="You eat the butterfly - today was a good day!";
+      gameOverJS.style.display="block";
+    }
+    if (options === 3) {
+      document.getElementById('choice').innerHTML="The butterfly flies away and as it does you contemplate the meaning of life and all things, you have an epiphany and suddenly understand life, the universe and everything.  As you are reveling in this heightened state you smell poop and run towards it forgetting everything forever";
+      document.getElementById('yesNoPlay').style.display="none";
+      gameOverJS.style.display="block";
+    }
   }
 }
 function nap(options) {
-  if (true) {
-    document.getElementById('choice').innerHTML =""
-    document.getElementById('yesNoNap').style.display="block";
+  if (options === 1) {
+    document.getElementById('choice').innerHTML ="You lay in a sunny patch roll onto your back and start napping. What do you dream about?";
+    document.getElementById('dreamChoice').style.display="block";
     document.getElementById('actionChoice').style.display="none";
   }
-  if options === 4) {
-    document.getElementById('choice').innerHTML =
+  if (options === 2) {
+    document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart! Bone time?";
+    document.getElementById('dreamChoice').style.display="none";
+    document.getElementById('yesNoNap').style.display="block";
+    if (options === 2) {
+      document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
+    }
+    if (options === 3) {
+      document.getElementById('choice').innerHTML="All your dreams come true!  You wake up to belly scratches.";
+      gameOverJS.style.display="block";
+    }
   }
-  if options === 4) {
-    document.getElementById('choice').innerHTML =
-  }
-  if options === 4) {
-    document.getElementById('choice').innerHTML =
-  }
-  if options === 4) {
-    document.getElementById('choice').innerHTML =
+  if (options === 3) {
+    document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
+    document.getElementById('dreamChoice').style.display="none";
+    document.getElementById('yesNoNap').style.display="block";
+    if (options === 2) {
+      document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart! Bone time?";
+    }
+    if (options === 3) {
+      document.getElementById('choice').innerHTML ="";
+      document.getElementById('choice').innerHTML="All your dreams come true!  You wake up to belly scratches.";
+      gameOverJS.style.display="block";
+    }
   }
 }
+
 
   // function sniff (){
   //   var hole = prompt ("You come upon the trail of a Badger!  You follow the smell to their den - do you go in? YES or NO?").toUpperCase();

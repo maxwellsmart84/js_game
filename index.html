@@ -17,10 +17,10 @@
       </header>
       <div id="actionChoice" style="display:inline-block;">
         <ul>
-          <li><button onclick="actions.sniff(true);"><h1>SNIFF!</h1></button></li>
+          <li><button onclick="sniff(1);"><h1>SNIFF!</h1></button></li>
           <li><button onclick="bark(1);"><h1>BARK!</h1></button></li>
-          <li><button onclick="actions.play(true);"><h1>PLAY!</h1></button></li>
-          <li><button onclick="actions.nap(true);"><h1>NAP!</h1></button></li>
+          <li><button onclick="play(1);"><h1>PLAY!</h1></button></li>
+          <li><button onclick="nap(1);"><h1>NAP!</h1></button></li>
         </ul>
       </div>
         <div id="yesNoBark" style="display:none;">
@@ -31,26 +31,40 @@
         </div>
         <div id="yesNoSniff" style="display:none;">
         <ul>
-          <li><button onclick="bark(2)"><h1>YES</h1></button></li>
-          <li><button onclick="bark(3)"><h1>NO</h1><button></li>
+          <li><button onclick="sniff(2)"><h1>YES</h1></button></li>
+          <li><button onclick="sniff(3)"><h1>NO</h1><button></li>
         </ul>
         </div>
       <div id="yesNoPlay" style="display:none;">
+        <ul>
+          <li><button onclick="play(2)"><h1>YES</h1></button></li>
+          <li><button onclick="play(3)"><h1>NO</h1><button></li>
+        </ul>
+      </div>
+      <div id="yesNoNap" style="display:none;">
         <ul>
           <li><button onclick="nap(2)"><h1>YES</h1></button></li>
           <li><button onclick="nap(3)"><h1>NO</h1><button></li>
         </ul>
       </div>
-      <div id="yesNoNap" style="display:none;">
-        <ul>
-          <li><button onclick="bark(2)"><h1>YES</h1></button></li>
-          <li><button onclick="bark(3)"><h1>NO</h1><button></li>
-        </ul>
-      </div>
-        <ul>
-          <li><button onclick="bark(2)"><h1>YES</h1></button></li>
-          <li><button onclick="bark(3)"><h1>NO</h1><button></li>
-        </ul>
-      </div>
-    </body>
+    <div id="dreamChoice" style="display:none;">
+      <ul>
+        <li><button onclick="nap(2)"><h1>FRISBEE</h1></button></li>
+        <li><button onclick="nap(3)"><h1>BONE</h1><button></li>
+      </ul>
+    </div>
+    <div id="gameOver" style="display:none;">
+      <button onclick="window.location.reload()"><h1>PLAY AGAIN?</h1><button>
+    </div>
+    <div class="images" style="display:none;">
+      <img id ="enlightment" src="" alt="" style="display:none;"/>Congratulations You've Reached Enlightment!
+      <img id ="shitEater" src="" alt="" style="display:none;" />You ate Poop! Good Job!
+      <img id ="playDay"src="" alt="" style="display:none;"/>You came, you played you conquered!
+      <img id="bugEater" src="" alt="" style="display:none;" />Insectiside or...REGICIDE?...
+      <img id="badgerHunter" src="" alt="" style="display:none;"/>BADGER SLAYER!
+      <img id="sweetDreams" src="" alt="" style="display:none;" />Naps are the best with belly rubs!
+      <img id="dazzled" src="" alt="" style="display:none;"/>You got dazed bro.
+      <img id="lassie" src="" alt="" style="display:none;"/>"What's wrong girl?!"
+    </div>
+  </body>
 </html>
