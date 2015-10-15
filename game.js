@@ -94,62 +94,41 @@ function nap(options) {
     document.getElementById('actionChoice').style.display="none";
   }
   if (options === 4) {
-    document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart! Bone time?";
+    document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart! You wake up to belly scritches!";
     document.getElementById('dreamChoice').style.display="none";
-    document.getElementById('yesNoNap').style.display="block";
-    if (options === 2) {
-        document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart! Bone time?";
-      }
-      else if (options === 2) {
-          document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
-      }
-      else if (options == 3) {
-        document.getElementById('yesNoNap').style.display="none";
-        document.getElementById('gameOver').style.display="block";
-        document.getElementById('sweetDreams').style.display="block";
-      }
+    document.getElementById('gameOver').style.display="block";
+
   }
   if (options === 5) {
-      document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
-      else if (options === 2) {
-        document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart!";
-      }
-      else if (options == 3) {
-        document.getElementById('yesNoNap').style.display="none";
-        document.getElementById('gameOver').style.display="block";
-        document.getElementById('sweetDreams').style.display="block";
-      }
-  }
-  if (options === 3) {
-      document.getElementById('choice').innerHTML="All your dreams come true!  You wake up to belly scratches.";
-      document.getElementById('yesNoNap').style.display="none";
+      document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! You wake up to belly scritches!";
+      document.getElementById('dreamChoice').style.display="none";
       document.getElementById('gameOver').style.display="block";
-      document.getElementById('sweetDreams').style.display="block";
+    }
   }
-  if (options === 5) {
-    document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
-    document.getElementById('dreamChoice').style.display="none";
-    document.getElementById('yesNoNap').style.display="block";
-  }
-  if (options === 2) {
-      document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart! Bone time?";
-      else if (options === 2) {
-        document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
-      }
-      else if (options == 3) {
-        document.getElementById('yesNoNap').style.display="none";
-        document.getElementById('gameOver').style.display="block";
-        document.getElementById('sweetDreams').style.display="block";
-      }
-  }
-  if (options === 3) {
-      document.getElementById('choice').innerHTML ="";
-      document.getElementById('choice').innerHTML="All your dreams come true!  You wake up to belly scratches.";
-      document.getElementById('yesNoNap').style.display="none";
-      document.getElementById('gameOver').style.display="block";
-      document.getElementById('sweetDreams').style.display="block";
-  }
-}
+  // if (options === 5) {
+  //   document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
+  //   document.getElementById('dreamChoice').style.display="none";
+  //   document.getElementById('yesNoNap').style.display="block";
+  // }
+  // if (options === 2) {
+  //     document.getElementById('choice').innerHTML ="You chase the frisbee everywhere jumping and leaping and tearing it apart! Bone time?";
+  //     else if (options === 2) {
+  //       document.getElementById('choice').innerHTML ="You gnaw on the yummy bone! Frisbee time?";
+  //     }
+  //     else if (options == 3) {
+  //       document.getElementById('yesNoNap').style.display="none";
+  //       document.getElementById('gameOver').style.display="block";
+  //       document.getElementById('sweetDreams').style.display="block";
+  //     }
+  // }
+  // if (options === 3) {
+  //     document.getElementById('choice').innerHTML ="";
+  //     document.getElementById('choice').innerHTML="All your dreams come true!  You wake up to belly scratches.";
+  //     document.getElementById('yesNoNap').style.display="none";
+  //     document.getElementById('gameOver').style.display="block";
+  //     document.getElementById('sweetDreams').style.display="block";
+  // }
+
 
 
   // function sniff (){
