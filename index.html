@@ -3,25 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body>
-    <div>
+    <div class ="js">
       <img src="" alt="" />
-        <script type="text/javascript" src"game.js">
+        <script type="text/javascript" src="game.js">
         </script>
       <div>
+      <header>
         <h1 id="choice">"Bear is frolicking through the woods, what should I do ?  SNIFF, PLAY, BARK or NAP?"</h1>
+      </header>
+      <div id="actionChoice" style="display:inline-block;">
         <ul>
-          <li><button onclick="sniff()"><h1>SNIFF!</h1></button></li>
-          <li><button onclick="bark"()><h1>BARK!</h1></button></li>
-          <li><button onclick="play"()><h1>PLAY!</h1></button></li>
-          <li><button onclick="nap"()><h1>NAP!</h1></button></li>
+          <li><button onclick="actions.sniff(true);"><h1>SNIFF!</h1></button></li>
+          <li><button onclick="bark(1);"><h1>BARK!</h1></button></li>
+          <li><button onclick="actions.play(true);"><h1>PLAY!</h1></button></li>
+          <li><button onclick="actions.nap(true);"><h1>NAP!</h1></button></li>
         </ul>
-        <div class=yesNo>
+      </div>
+        <div id="yesNoBark" style="display:none;">
+          <ul>
+            <li><button onclick="bark(2)"><h1>YES</h1></button></li>
+            <li><button onclick="bark(3)"><h1>NO</h1><button></li>
+          </ul>
+        </div>
+        <div id="yesNoSniff" style="display:none;">
         <ul>
-          <li><button onclick="sniff(true)"><h1>YES</h1></button></li>
-          <li><button onclick="sniff(false)"><h1>NO</h1><button></li>
+          <li><button onclick="bark(2)"><h1>YES</h1></button></li>
+          <li><button onclick="bark(3)"><h1>NO</h1><button></li>
+        </ul>
+        </div>
+      <div id="yesNoPlay" style="display:none;">
+        <ul>
+          <li><button onclick="nap(2)"><h1>YES</h1></button></li>
+          <li><button onclick="nap(3)"><h1>NO</h1><button></li>
+        </ul>
+      </div>
+      <div id="yesNoNap" style="display:none;">
+        <ul>
+          <li><button onclick="bark(2)"><h1>YES</h1></button></li>
+          <li><button onclick="bark(3)"><h1>NO</h1><button></li>
+        </ul>
+      </div>
+        <ul>
+          <li><button onclick="bark(2)"><h1>YES</h1></button></li>
+          <li><button onclick="bark(3)"><h1>NO</h1><button></li>
         </ul>
       </div>
     </body>
